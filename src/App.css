@@ -1,38 +1,170 @@
-.App {
-  text-align: center;
+body {
+  color: rgb(14, 13, 13) !important;
+  line-height: 20px !important;
+  font-family: 'Raleway', Helvetica,Arial,sans-serif !important;
+  
+}
+.w-container{
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    text-align: center;
+}
+.w-thunderstorm{
+    background: url('./icons/thunder.svg');
+    background-size: cover;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 100px;
+  margin: auto;
+  display: inline-table
+}
+.w-rain{
+    background: url('./icons/rainy-5.svg');
+    background-size: cover;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 100px;
+  margin: auto;
+  display: inline-table
+}
+.w-hail{
+    background: url('./icons/rainy-6.svg');
+    background-size: cover;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 100px;
+  margin: auto;
+  display: inline-table
+}
+.w-snow{
+    background: url('./icons/snowy-5.svg');
+    background-size: cover;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 100px;
+  margin: auto;
+  display: inline-table
+}
+.w-cloudy-windy{
+    background: url('./icons/cloudy-day-1.svg');
+    background-size: cover;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 100px;
+  margin: auto;
+  display: inline-table
+}
+.w-day-sunny{
+    background: url('./icons/day.svg');
+    background-size: cover;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 100px;
+  margin: auto;
+  display: inline-table
+}
+.w-cloud{
+    background: url('./icons/cloudy.svg');
+    background-size: cover;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 100px;
+  margin: auto;
+  display: inline-table
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.w-search{
+  border: 1px solid #dad7d7;
+    padding: 5px;
+    outline: none;
+    width: 200px;
+    margin-bottom: 22px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.w-row{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.w-left{
+    flex: 60% 1;
+    /* background-color: red; */
+    border-right: 1px solid #dad3d3;
+    padding-bottom: 10px;
+}
+.w-city > span:nth-child(1){
+    font-size: 20px;
+}
+.w-city > span:nth-child(2){
+    font-size: 15px;
+}
+.w-right{
+    flex:40%;
+    padding: 70px 23px 23px 23px;
+   
+    text-align: left;
+}
+.w-right-child{
+ 
+    padding: 5px;
+    /* background: #514f69;
+    color: #f1dcb4; */
+}
+.w-right-child > div{
+  padding: 5px;
+}
+
+/* forecast card */
+
+.w-card{
+    border: 1px solid hsl(0, 0%, 81%);
+    border-radius: 0px;
+    margin-right: 5px;
+    flex:33%;
+    /* background: #514f69;
+    color: #f1dcb4; */
+}
+.w-card  p{
+margin-bottom:0px;
+}
+.w-body{
+  padding: 10px 0px 5px 0px;
+}
+a{
+  text-decoration: none;
+  color:black
+}
+.w-loading{
+  margin-top: 100px;
+    background: #eff186;
+    max-width: 200px;
+    margin-right: auto;
+    padding: 5px;
+    margin-left: auto;
+    border: 1px solid #d9e463;
+}
+.w-btn{
+  background: #31a0ef;
+    border: none;
+    color: white;
+    padding: 5px;
+    width: 100px;
+}
+
+
+@media screen and (max-width: 480px) {
+  .w-left i {
+    height: 200px !important;
+    width: 188px !important;
   }
+  .w-right {
+    padding: 51px 23px 23px 23px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.w-forecast{
+  justify-content:end !important;
 }
-
-.App-link {
-  color: #61dafb;
+.w-container{
+  margin-top: 50px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
